@@ -27,7 +27,10 @@ class _FindUserState extends State<FindUser> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    TextField(),
+                    TextField(
+                      decoration: InputDecoration(
+                          hintText: 'Search people by Username'),
+                    ),
                     SizedBox(
                       height: 10,
                     ),
@@ -49,7 +52,7 @@ class _FindUserState extends State<FindUser> {
           CircleAvatar(
             child: FlutterLogo(),
           ),
-          Text("ABCD"),
+          Text("USERNAME"),
           ElevatedButton(
               onPressed: () {},
               child: Text("Follow"),
