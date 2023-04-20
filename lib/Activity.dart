@@ -13,7 +13,9 @@ class _ActivityState extends State<Activity> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(CupertinoIcons.back),
+        leading: BackButton(
+          onPressed: () => Navigator.of(context).pop(false),
+        ),
         elevation: 0,
         title: Text('Activity'),
         centerTitle: true,

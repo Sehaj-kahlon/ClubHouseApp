@@ -13,7 +13,9 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(CupertinoIcons.back),
+        leading: BackButton(
+          onPressed: () => Navigator.of(context).pop(false),
+        ),
         elevation: 0,
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.share)),

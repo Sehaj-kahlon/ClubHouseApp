@@ -19,7 +19,7 @@ class _RoomState extends State<Room> {
         elevation: 0,
         leading: IconButton(
           icon: Icon(CupertinoIcons.chevron_down),
-          onPressed: () {},
+          onPressed: () => Navigator.of(context).pop(false),
         ),
         title: Text("Hallway"),
         actions: [

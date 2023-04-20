@@ -15,11 +15,8 @@ class _ChatState extends State<Chat> {
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            leading: GestureDetector(
-              child: Icon(CupertinoIcons.back),
-              onTap: () {
-                Navigator.of(context).pop();
-              },
+            leading: BackButton(
+              onPressed: () => Navigator.of(context).pop(false),
             ),
             title: Text("Chat"),
             centerTitle: true,

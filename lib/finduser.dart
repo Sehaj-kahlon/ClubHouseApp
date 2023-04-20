@@ -13,7 +13,9 @@ class _FindUserState extends State<FindUser> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          leading: Icon(CupertinoIcons.back),
+          leading: BackButton(
+            onPressed: () => Navigator.of(context).pop(false),
+          ),
           elevation: 0,
           title: Text('Explore'),
           centerTitle: true,
