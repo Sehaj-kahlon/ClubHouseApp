@@ -29,11 +29,9 @@ class _AvailableToChatState extends State<AvailableToChat> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.network(
-                  'https://picsum.photos/seed/409/600',
-                  width: 100,
-                  height: 100,
-                  fit: BoxFit.cover,
+                CircleAvatar(
+                  child: FlutterLogo(),
+                  radius: 30,
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.min,
