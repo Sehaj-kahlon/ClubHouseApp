@@ -114,6 +114,7 @@ class _RoomState extends State<Room> {
                             Image.network('https://picsum.photos/seed/901/600'),
                       ),
                     ),
+                    SizedBox(width: 10),
                     Container(
                       width: 50,
                       height: 50,
@@ -123,6 +124,7 @@ class _RoomState extends State<Room> {
                             Image.network('https://picsum.photos/seed/901/600'),
                       ),
                     ),
+                    SizedBox(width: 10),
                     Container(
                       width: 50,
                       height: 50,
@@ -132,6 +134,7 @@ class _RoomState extends State<Room> {
                             Image.network('https://picsum.photos/seed/901/600'),
                       ),
                     ),
+                    SizedBox(width: 10),
                     Container(
                       width: 50,
                       height: 50,
@@ -141,6 +144,7 @@ class _RoomState extends State<Room> {
                             Image.network('https://picsum.photos/seed/901/600'),
                       ),
                     ),
+                    SizedBox(width: 10),
                     Container(
                       width: 50,
                       height: 50,
@@ -174,6 +178,7 @@ class _RoomState extends State<Room> {
                             Image.network('https://picsum.photos/seed/901/600'),
                       ),
                     ),
+                    SizedBox(width: 10),
                     Container(
                       width: 50,
                       height: 50,
@@ -183,6 +188,7 @@ class _RoomState extends State<Room> {
                             Image.network('https://picsum.photos/seed/901/600'),
                       ),
                     ),
+                    SizedBox(width: 10),
                     Container(
                       width: 50,
                       height: 50,
@@ -192,6 +198,7 @@ class _RoomState extends State<Room> {
                             Image.network('https://picsum.photos/seed/901/600'),
                       ),
                     ),
+                    SizedBox(width: 10),
                     Container(
                       width: 50,
                       height: 50,
@@ -201,6 +208,7 @@ class _RoomState extends State<Room> {
                             Image.network('https://picsum.photos/seed/901/600'),
                       ),
                     ),
+                    SizedBox(width: 10),
                     Container(
                       width: 50,
                       height: 50,
@@ -241,9 +249,16 @@ class _RoomState extends State<Room> {
           ),
           Row(
             children: [
-              Chip(avatar: Icon(Icons.add), label: Text('')),
               Chip(
-                avatar: Icon(Icons.handyman),
+                  avatar: Icon(
+                    Icons.add,
+                  ),
+                  label: Text('')),
+              SizedBox(width: 10),
+              Chip(
+                avatar: Icon(
+                  Icons.handyman,
+                ),
                 label: Text(''),
               )
             ],
