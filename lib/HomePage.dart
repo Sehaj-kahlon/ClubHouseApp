@@ -150,17 +150,18 @@ class HomePage extends StatelessWidget {
                               thickness: 1,
                             ),
                             Text("Start a room Open to everyone"),
-                            RaisedButton(
+                            ElevatedButton(
                               onPressed: () {},
-                              textColor: Colors.white,
-                              color: AppColor.green,
                               child: Text("Let's go",
                                   style: TextStyle(
-                                    fontWeight: FontWeight.bold,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white)),
+                              style: ElevatedButton.styleFrom(
+                                  backgroundColor: AppColor.green,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(30.0),
                                   )),
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30.0)),
-                            )
+                            ),
                           ],
                         ),
                       ),
@@ -183,7 +184,7 @@ class HomePage extends StatelessWidget {
                       color: Colors.white,
                     )),
                     TextSpan(
-                        text: ' Start a room',
+                        text: 'Start a room',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
