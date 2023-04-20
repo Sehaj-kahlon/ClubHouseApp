@@ -20,23 +20,26 @@ class _FindUserState extends State<FindUser> {
           title: Text('Explore'),
           centerTitle: true,
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            TextField(),
-            SizedBox(
-              height: 10,
-            ),
-            Text("PEOPLE TO FOLLOW"),
-            Expanded(
-                child: ListView.builder(
-                    itemCount: 100,
-                    itemBuilder: (BuildContext context, int index) {
-                      return explorePeople(context);
-                    }))
-          ],
-        ));
+        body: SafeArea(
+            child: Padding(
+                padding: const EdgeInsets.only(top: 0, left: 5, right: 5),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    TextField(),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text("PEOPLE TO FOLLOW"),
+                    Expanded(
+                        child: ListView.builder(
+                            itemCount: 100,
+                            itemBuilder: (BuildContext context, int index) {
+                              return explorePeople(context);
+                            }))
+                  ],
+                ))));
   }
 
   Widget explorePeople(BuildContext context) {
