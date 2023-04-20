@@ -100,6 +100,7 @@ class HomePage extends StatelessWidget {
                                     )
                                   ],
                                 ),
+                                SizedBox(width: 20),
                                 Column(
                                   children: [
                                     Container(
@@ -122,6 +123,7 @@ class HomePage extends StatelessWidget {
                                     )
                                   ],
                                 ),
+                                SizedBox(width: 20),
                                 Column(
                                   children: [
                                     Container(
