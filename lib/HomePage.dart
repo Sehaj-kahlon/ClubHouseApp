@@ -87,7 +87,7 @@ class HomePage extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                           child: Image.network(
-                                            'https://picsum.photos/seed/692/600',
+                                            'https://i.ibb.co/ZGCCM4z/about-us-employment.jpg',
                                             fit: BoxFit.fitWidth,
                                             width: 60,
                                             height: 60,
